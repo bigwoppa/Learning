@@ -165,7 +165,7 @@ def init_board():
 ##SELECTION HELPERS
 def select_mode():
     while True:
-        choice = input("Human VS AI (1)\n AI VS AI\n Select your mode (1/2)")
+        choice = input("Human VS AI (1)\n AI VS AI (2)\n Select your mode (1/2)")
         if choice == str(1):
                 return "human"
         elif choice == str(2):
@@ -176,7 +176,7 @@ def select_mode():
 
 def select_difficulty():
      while True:
-        diff = input("select robot, random, winmove, win/blockmove. (1, 2, 3)")
+        diff = input("select robot, random, winmove, win/blockmove, minimax. (1, 2, 3, 4)")
         if diff == "1":
              return "randomai"
         elif diff == "2":
